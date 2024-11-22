@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="mx-4 sm:mx-[10%] min-h-screen overflow-hidden ">
+      <div className="mx-4 sm:mx-[10%] min-h-screen ">
         <Navbar></Navbar>
 
         <div className="mx-0 h-full">

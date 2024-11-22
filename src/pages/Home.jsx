@@ -2,10 +2,13 @@ import React from "react";
 import heroimg from "../assets/hero_img.png";
 import Whyus from "../components/Whyus";
 import Services from "../components/Services";
+import Projects from "../components/Projects";
+import ClientReview from "../components/ClientReview";
+import ContactSection from "../components/ContactSection";
 const Home = () => {
   return (
     <>
-    <div className="relative z-100 h-full">
+    <div className="relative z-100 h-full pb-12 md:pb-24 lg:pb-32">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-4 md:py-20">
         <div className="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
           <h1 className="text-4xl md:text-6xl z-100 max-w-full md:text-left text-center md:max-w-1/2 font-grifter font-bold text-gray-800 mb-4">
@@ -41,6 +44,9 @@ const Home = () => {
     </div>
     <Whyus></Whyus>
     <Services></Services>
+    <Projects></Projects>
+    <ClientReview></ClientReview>
+    <ContactSection></ContactSection>
     </>
   );
 };

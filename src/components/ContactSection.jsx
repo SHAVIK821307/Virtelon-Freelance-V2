@@ -5,14 +5,14 @@ const ContactSection = () => {
     <section id="clientreview" className="w-full pb-12 md:pb-24 lg:pb-32">
       <div className="container flex flex-col justify-center items-center mx-auto">
         <div className="flex flex-col items-center justify-center  mb-6 max-w-3xl mx-auto">
-          <h1 className="text-5xl md:text-6xl text-center  font-bold tracking-tighter mb-4 ">
+          <h1 className="text-5xl md:text-6xl text-center  font-bold tracking-tighter mb-4 " data-aos="fade-up" data-aos-duration="450">
             Contact Us
           </h1>
-          <p className="text-gray-900  capitalize font-medium">
+          <p className="text-gray-900  capitalize font-medium" data-aos="fade-up" data-aos-duration="700">
             Don't wait, Its Now or Never!
           </p>
         </div>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white text-sm py-2 px-4 w-48 rounded-md mx-auto">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white text-sm py-2 px-4 w-48 rounded-md mx-auto" data-aos="fade-up" data-aos-duration="950">
         Let’s Have a Chat
         </button>
         <div className="bg-[#44DAFF] flex flex-col md:flex-row justify-around items-center w-11/12 px-6 md:px-20 py-20 h-80 rounded-2xl mt-12">
@@ -27,7 +27,7 @@ const ContactSection = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 24 24"
                 className="h-8 w-8"
                 height="1em"
@@ -43,7 +43,7 @@ const ContactSection = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 24 24"
                 className="h-8 w-8"
                 height="1em"
@@ -59,7 +59,7 @@ const ContactSection = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 24 24"
                 className="h-8 w-8"
                 height="1em"
@@ -82,7 +82,7 @@ const ContactSection = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 24 24"
                 className="h-8 w-8"
                 height="1em"
@@ -105,7 +105,7 @@ const ContactSection = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 24 24"
                 className="h-8 w-8"
                 height="1em"

@@ -17,14 +17,14 @@ const Home = () => {
           </h1>
           <div>
             <ul className="list-none items-center justify-center md:items-start md:justify-start text-base md:text-lg font-semibold flex flex-cols gap-4 md:gap-6">
-              <li>Innovate</li>
-              <li className="list-disc">Design</li>
-              <li className="list-disc">Develop</li>
+              <li>Imagine</li>
+              <li className="list-disc">Discuss</li>
+              <li className="list-disc">Achieve</li>
             </ul>
           </div>
           <div className="flex items-center justify-center md:items-start md:justify-start gap-4 mt-4 flex-wrap">
             <button className="bg-blue-500 hover:bg-blue-700 text-white text-sm py-2 px-4 w-48 rounded-md ">
-              Book Free Consultation
+            Let’s Have a Chat
             </button>
             <a href="/contact">
               <button className="border-2 border-blue-200 hover:bg-gray-400 text-sm text-gray-800 w-48 py-2 px-8 rounded-md">

@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section id="clientreview" className="w-full pb-12 md:pb-24 lg:pb-32">
+    <section id="contact" className="w-full pb-12 md:pb-24 lg:pb-32">
       <div className="container flex flex-col justify-center items-center mx-auto">
         <div className="flex flex-col items-center justify-center  mb-6 max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-6xl text-center  font-bold tracking-tighter mb-4 " data-aos="fade-up" data-aos-duration="450">

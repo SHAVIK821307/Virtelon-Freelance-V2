@@ -43,7 +43,7 @@ const Services = () => {
   const lastIndex = services.length - 1;
 
   return (
-    <section className="w-full pb-12 md:pb-24 lg:pb-32">
+    <section id="services" className="w-full pb-12 md:pb-24 lg:pb-32">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-6xl  text-center font-bold tracking-tighter mb-4 ">

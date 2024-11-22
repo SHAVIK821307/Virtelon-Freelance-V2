@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
             {/* <Route path="/franchise" element={<Franchise />} /> */}
           </Routes>
         </div>
+        <Footer></Footer>
       </div>
     </>
   );

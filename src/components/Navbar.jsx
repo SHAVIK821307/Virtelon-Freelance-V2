@@ -37,10 +37,10 @@ const Navbar = () => {
             <li className="py-1">Home</li>
             <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
           </NavLink>
-          <NavLink to="/whyus">
+          <a href="#whyus">
             <li className="py-1">Why Us</li>
             <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
-          </NavLink>
+          </a>
           <NavLink to="/services">
             <li className="py-1">Services</li>
             <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />

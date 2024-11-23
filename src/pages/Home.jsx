@@ -5,7 +5,9 @@ import Services from "../components/Services";
 import Projects from "../components/Projects";
 import ClientReview from "../components/ClientReview";
 import ContactSection from "../components/ContactSection";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+  const navigate=useNavigate();
   return (
     <>
     <div className="relative z-100 h-full pb-12 md:pb-24 lg:pb-32">
@@ -23,7 +25,7 @@ const Home = () => {
             </ul>
           </div>
           <div className="flex items-center justify-center md:items-start md:justify-start gap-4 mt-4 flex-wrap">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white text-sm py-2 px-4 w-48 rounded-md ">
+            <button onClick={() => navigate("/contact")} className="bg-blue-500 hover:bg-blue-700 text-white text-sm py-2 px-4 w-48 rounded-md ">
             Let’s Have a Chat
             </button>
             <a href="/contact">

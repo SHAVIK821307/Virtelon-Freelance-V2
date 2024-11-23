@@ -62,7 +62,7 @@ const Navbar = () => {
           />
         </div>
         <div className="hidden md:block" data-aos="fade-down" data-aos-duration="500">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white px-8 py-3 rounded-md">
+          <button onClick={() => navigate("/contact")} className="bg-blue-500 hover:bg-blue-700 text-white px-8 py-3 rounded-md">
             Book Free Consultation
           </button>
         </div>

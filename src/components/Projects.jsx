@@ -8,13 +8,13 @@ const Projects = () => {
       id:"bra-factory",
       title: "Bra Factory",
       description:
-        "App for biggest Tourist Tempo company of ladakh to manage their bookings and drivers.",
+        "Bra Factory, where elegance and comfort come together. We’re here to offer you the perfect blend of high-quality bras and lingerie designed to make you feel confident, beautiful, and empowered—every day.",
     },
     {
       id:"7-senses",
       title: "7 Senses Integration Centre",
       description:
-        "The best food delivery app in town, and enjoy delicious meals from your favorite restaurants.",
+        "7 Senses Integration Centre is the best New Era Child Mental Health Recovery Integration organization that helps in the Mental as well as Logical growth of Children.",
     },
   ];
   

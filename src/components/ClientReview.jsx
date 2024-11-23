@@ -12,7 +12,7 @@ const ClientReview = () => {
     {
       title: "7 Senses Integration Centre",
       description:
-        "The best food delivery app in town, and enjoy delicious meals from your favorite restaurants.",
+        "The team at VIRTELON did an excellent job developing our Children Heath Website. They were professional, responsive and did all the work within the deadline. We are very satisfied with their work and would recommend them everytime.",
     },
   ];
 

@@ -38,7 +38,7 @@ export default function ProjectDetails() {
         <div className="rounded-3xl bg-[#44DAFF] p-6 text-black" data-aos="fade-right" data-aos-duration="700">
           <h2 className="mb-4 text-2xl font-bold">Client</h2>
           <div className="space-y-2">
-            <h3 className="text-xl font-semibold">{project.client.name}</h3>
+            <h3 className="text-xl font-semibold">{project.client.name}-</h3>
             <p className="">{project.client.description}</p>
           </div>
         </div>
@@ -140,7 +140,7 @@ export default function ProjectDetails() {
             <div className="flex items-center gap-4 mt-auto">
               <div className="relative h-16 w-16 overflow-hidden rounded-full">
                 <img
-                  src={logo}
+                  src={project.testimonialProfile}
                   alt=""
                   className="object-cover"
                   loading="lazy"

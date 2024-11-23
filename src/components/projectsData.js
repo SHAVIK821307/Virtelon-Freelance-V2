@@ -8,6 +8,8 @@ import testimonial1Mockup7senses from "../assets/testimonial1_mockup_7senses.png
 import testimonial1MockupBrafact from "../assets/testimonial1_mockup_brafact.png";
 import testimonial2Mockup7senses from "../assets/testimonial2_mockup_7senses.png";
 import testimonial2MockupBrafact from "../assets/testimonial2_mockup_brafact.png";
+import testimonialProfile7senses from "../assets/testimonial_profile_7senses.png"
+import testimonialProfileBrafact from "../assets/testimonial_profile_brafact.png"
 
 export const projectsData=[
     {
@@ -42,6 +44,7 @@ export const projectsData=[
         mobileImages: aboutMockupBrafact,
         testimonialDesc:
           "The team at VIRTELON did an excellent job developing our E-commerce Website. They were professional, responsive, and delivered a high-quality product on time. We are very satisfied with their work and would recommend them to anyone looking for a reliable development team.",
+        testimonialProfile:testimonialProfileBrafact,  
         testimonialName: "Zamiruddin",
         testimonialPos: "CEO & Founder - LadyLand",
         testimonialImg1: testimonial1MockupBrafact,
@@ -51,7 +54,7 @@ export const projectsData=[
         id:"7-senses",
         title: "7 Senses Integration Centre",
         description:
-          "Real Estate, development and control room system. We've helped them implement about 1,500 orders and 300 agents designed to serve you fast comfort, beautiful, and enjoyable every day.",
+          "7 Senses Integration Centre is the best New Era Child Mental Health Recovery Integration organization that helps in the Mental as well as Logical growth of Children.",
         client: {
           name: "7 Senses Integration Centre",
           description: "Child Mental Health Integration Centre",
@@ -59,8 +62,8 @@ export const projectsData=[
         role: ["UI/UX Design", "Frontend Development", "Deployment"],
         aboutDesc:"Seven Senses Integration Centre - Child Mental Health Integration Centre ",
         features: [
-          "Real Integration / To have a meeting for your children's mental development",
-          "Responsive Design / Designed to scale seamlessly from small to large devices, ensuring responsive on every device",
+          "Real Integration : To have a meeting for your children's mental development",
+          "Responsive Design : Designed to scale seamlessly from small to large devices, ensuring responsive on every device",
         ],
         technologies: [
           { name: "React", icon: logo },
@@ -72,6 +75,7 @@ export const projectsData=[
         mobileImages: aboutMockup7senses,
         testimonialDesc:
           "The team at VIRTELON did an excellent job developing our Children Heath Website. They were professional, responsive and did all the work within the deadline. We are very satisfied with their work and would recommend them everytime.",
+        testimonialProfile:testimonialProfile7senses,
         testimonialName: "Payel Maity",
         testimonialPos: "CEO & Founder - Seven Senses Integration Centre",
         testimonialImg1: testimonial1Mockup7senses,

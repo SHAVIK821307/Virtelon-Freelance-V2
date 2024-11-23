@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ProjectDetails from "./pages/ProjectDetails";
 import ScrollToTop from "./components/ScrollToTop";
+import AllServices from "./pages/AllServices";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -20,8 +21,8 @@ function App() {
             <Route path="/" element={<Home />} />
             
             <Route path="/projects/:id" element={<ProjectDetails />} />
+            <Route path="/services" element={<AllServices />} />
             {/* <Route path="/contact" element={<Contact />} /> */}
-            {/* <Route path="/services" element={<Services />} /> */}
             {/* <Route path="/portfolio" element={<Portfolio />} /> */}
             {/* <Route path="/services" element={<Services />} /> */}
             {/* <Route path="/franchise" element={<Franchise />} /> */}

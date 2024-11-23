@@ -5,11 +5,13 @@ const Projects = () => {
   const navigate = useNavigate();
   const projects = [
     {
+      id:"bra-Factory",
       title: "Bra Factory",
       description:
         "App for biggest Tourist Tempo company of ladakh to manage their bookings and drivers.",
     },
     {
+      id:"7-senses",
       title: "7 Senses Integration Centre",
       description:
         "The best food delivery app in town, and enjoy delicious meals from your favorite restaurants.",
@@ -18,7 +20,7 @@ const Projects = () => {
   
 
   return (
-    <section id="projects" className="w-full pb-12 md:pb-24 lg:pb-32">
+    <section id="project" className="w-full pb-12 md:pb-24 lg:pb-32">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-6xl  text-center font-bold tracking-tighter mb-4 ">
@@ -37,7 +39,7 @@ const Projects = () => {
                 data-aos={index % 2 == 0 ? "fade-left" : "fade-left"}
                 data-aos-duration="800"
                 data-aos-offset="150"
-                onClick={() => navigate("/projects")}
+                onClick={() => navigate(`/projects/${project.id}`)}
                 key={index}
               >
                 <div className="absolute top-0 right-0 p-2">

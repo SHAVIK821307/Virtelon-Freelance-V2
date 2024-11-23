@@ -1,7 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ClientReview = () => {
-  
+  const navigate = useNavigate();
   const reviews = [
     {
       title: "LadyLand",
@@ -31,11 +32,11 @@ const ClientReview = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mx-auto">
             {reviews.map((review, index) => (
               <div
-                className="relative cursor-pointer bg-[#FCE9E8] border-2 border-transparent hover:border-2 hover:bg-[#fededd] hover:border-[#ff9691] transition-colors duration-200 px-6 py-12 rounded-lg shadow-xl"
+                className="relative bg-[#FCE9E8] border-2 border-transparent hover:border-2 hover:bg-[#fededd] hover:border-[#ff9691] transition-colors duration-200 px-6 py-12 rounded-lg shadow-xl"
                 data-aos={index % 2 == 0 ? "fade-right" : "fade-right"}
                 data-aos-duration="800"
                 data-aos-offset="150"
-                
+                onClick={() => navigate(`/projects/${project.id}`)}
                 key={index}
               >
                 

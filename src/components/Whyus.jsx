@@ -21,7 +21,7 @@ const Whyus = () => {
           </p>
         </div>
         <div
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full md:px-20 py-20 rounded-2xl bg-[#44DAFF] justify-between"
+          className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full md:px-20 py-20 rounded-2xl bg-[#44DAFF] text-black justify-between"
           data-aos="fade-up"
           data-aos-duration="500"
         >

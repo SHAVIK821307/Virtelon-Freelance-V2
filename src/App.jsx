@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import ProjectDetails from "./pages/ProjectDetails";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -13,9 +15,11 @@ function App() {
         <Navbar></Navbar>
 
         <div className="mx-0 h-full">
+            <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<About />} /> */}
+            
+            <Route path="/projects/:id" element={<ProjectDetails />} />
             {/* <Route path="/contact" element={<Contact />} /> */}
             {/* <Route path="/services" element={<Services />} /> */}
             {/* <Route path="/portfolio" element={<Portfolio />} /> */}

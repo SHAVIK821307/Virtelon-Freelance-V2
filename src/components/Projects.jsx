@@ -5,7 +5,7 @@ const Projects = () => {
   const navigate = useNavigate();
   const projects = [
     {
-      id:"bra-Factory",
+      id:"bra-factory",
       title: "Bra Factory",
       description:
         "App for biggest Tourist Tempo company of ladakh to manage their bookings and drivers.",
@@ -20,7 +20,7 @@ const Projects = () => {
   
 
   return (
-    <section id="project" className="w-full pb-12 md:pb-24 lg:pb-32">
+    <section id="projects" className="w-full pb-12 md:pb-24 lg:pb-32">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-6xl  text-center font-bold tracking-tighter mb-4 ">

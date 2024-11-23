@@ -1,44 +1,19 @@
 import React from "react";
-import hero7senses from "../assets/hero_7senses.png";
+import { useParams } from "react-router-dom";
 import logo from "../assets/logo.png";
-import aboutMockup7senses from "../assets/about_mockup_7senses.png";
 
-import testimonial1Mockup7senses from "../assets/testimonial1_mockup_7senses.png";
-import testimonial2Mockup7senses from "../assets/testimonial2_mockup_7senses.png";
+import useGetProjects from "../hooks/useGetProjects";
 
 export default function ProjectDetails() {
-  const project = {
-    title: "7 Senses Integration Centre",
-    description:
-      "Real Estate, development and control room system. We've helped them implement about 1,500 orders and 300 agents designed to serve you fast comfort, beautiful, and enjoyable every day.",
-    client: {
-      name: "7 Senses Integration Centre",
-      description: "Child Mental Health Integration Centre",
-    },
-    role: ["UI/UX Design", "Frontend Development", "Deployment"],
-    features: [
-      "Real Integration / To have a meeting for your children's mental development",
-      "Responsive Design / Designed to scale seamlessly from small to large devices, ensuring responsive on every device",
-    ],
-    technologies: [
-      { name: "React", icon: logo },
-      { name: "HTTP/3", icon: logo },
-      { name: "Tailwind CSS", icon: logo },
-      { name: "Swiper", icon: logo },
-    ],
-    mockupImage: hero7senses,
-    mobileImages: aboutMockup7senses,
-    testimonialDesc:
-      "The team at VIRTELON did an excellent job developing our Children Heath Website. They were professional, responsive and did all the work within the deadline. We are very satisfied with their work and would recommend them everytime.",
-    testimonialName: "Payel Maity",
-    testimonialPos: "CEO & Founder - Seven Senses Integration Centre",
-    testimonialImg1: testimonial1Mockup7senses,
-    testimonialImg2: testimonial2Mockup7senses,
-  };
+  const { id } = useParams();
+  const project = useGetProjects(id);
+  if (!project) {
+    return <h1 className="text-5xl font-bold text-center my-12 text-red-600">Project Not Found</h1>;
+  }
   return (
     <div className="mx-auto max-w-6xl my-8 space-y-8">
       {/* Header Section */}
-      <section className="rounded-3xl bg-[#44DAFF] p-8 text-black">
+      <section className="rounded-3xl bg-[#44DAFF] p-8 text-black" data-aos="fade-up" data-aos-duration="700">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold">{project.title}</h1>
@@ -52,6 +27,7 @@ export default function ProjectDetails() {
               src={project.mockupImage}
               alt="Project mockup"
               className="object-contain"
+              loading="lazy"
             />
           </div>
         </div>
@@ -59,7 +35,7 @@ export default function ProjectDetails() {
 
       {/* Info Cards */}
       <div className="grid gap-6 md:grid-cols-2">
-        <div className="rounded-3xl bg-[#44DAFF] p-6 text-black">
+        <div className="rounded-3xl bg-[#44DAFF] p-6 text-black" data-aos="fade-right" data-aos-duration="700">
           <h2 className="mb-4 text-2xl font-bold">Client</h2>
           <div className="space-y-2">
             <h3 className="text-xl font-semibold">{project.client.name}</h3>
@@ -67,7 +43,7 @@ export default function ProjectDetails() {
           </div>
         </div>
 
-        <div className="rounded-3xl bg-[#44DAFF] p-6 text-black">
+        <div className="rounded-3xl bg-[#44DAFF] p-6 text-black" data-aos="fade-right" data-aos-duration="900">
           <h2 className="mb-4 text-2xl font-bold">Our Role</h2>
           <ul className="space-y-2">
             {project.role.map((role, index) => (
@@ -81,24 +57,25 @@ export default function ProjectDetails() {
 
       {/* About Project */}
       <div className="grid gap-6 md:grid-cols-2">
-        <div className="rounded-3xl bg-[#44DAFF] p-6 text-black shadow-xl">
+        <div className="rounded-3xl bg-[#44DAFF] p-6 text-black shadow-xl" data-aos="fade-right" data-aos-duration="700">
           <h2 className="mb-4 text-2xl font-bold">About Project</h2>
-          <p className="">{project.description}</p>
+          <p className="">{project.aboutDesc}</p>
         </div>
 
         <div className=" ">
-          <div className="relative rounded-3xl bg-[#44DAFF] p-6 shadow-xl ">
+          <div className="relative rounded-3xl bg-[#44DAFF] p-6 shadow-xl " data-aos="fade-left" data-aos-duration="700">
             <img
               src={project.mobileImages}
               alt={`Mobile mockup`}
               className="object-contain"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
 
       {/* Features */}
-      <section className="rounded-3xl bg-[#44DAFF] p-6 text-black">
+      <section className="rounded-3xl bg-[#44DAFF] p-6 text-black" data-aos="fade-down" data-aos-duration="900">
         <h2 className="mb-4 text-2xl font-bold">Features</h2>
         <ul className="space-y-3">
           {project.features.map((feature, index) => (
@@ -123,7 +100,7 @@ export default function ProjectDetails() {
       </section>
 
       {/* Technologies */}
-      <section className="rounded-3xl bg-[#44DAFF] p-6 text-black">
+      <section className="rounded-3xl bg-[#44DAFF] p-6 text-black" data-aos="fade-up" data-aos-duration="900">
         <h2 className="mb-6 text-2xl font-bold">Technology Used</h2>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
           {project.technologies.map((tech, index) => (
@@ -137,6 +114,7 @@ export default function ProjectDetails() {
                 width={20}
                 height={20}
                 className="h-5 w-5"
+                loading="lazy"
               />
               <span>{tech.name}</span>
             </div>
@@ -146,21 +124,27 @@ export default function ProjectDetails() {
       {/* Testimonials */}
       <div className="grid gap-6 md:grid-cols-2">
         <div className="grid gap-6 md:grid-rows-2">
-          <div className="rounded-3xl bg-[#44DAFF] flex px-6 pt-6 items-end text-black shadow-xl">
+          <div className="rounded-3xl bg-[#44DAFF] flex px-6 pt-6 items-end text-black shadow-xl" data-aos-offset="100" data-aos="fade-right" data-aos-duration="500">
             <img
               src={project.testimonialImg1}
+              loading="lazy"
               alt={`Mobile mockup`}
               className="object-contain mx-auto"
             />
           </div>
-          <div className="rounded-3xl flex flex-col bg-[#44DAFF] p-6 text-black shadow-xl">
+          <div className="rounded-3xl flex flex-col bg-[#44DAFF] p-6 text-black shadow-xl" data-aos-offset="100" data-aos="fade-right" data-aos-duration="900">
             <div className="mb-4">
               <h2 className="mb-4 text-2xl font-bold">Testimonial</h2>
               <p className="">{project.testimonialDesc}</p>
             </div>
             <div className="flex items-center gap-4 mt-auto">
               <div className="relative h-16 w-16 overflow-hidden rounded-full">
-                <img src={logo} alt="" className="object-cover" />
+                <img
+                  src={logo}
+                  alt=""
+                  className="object-cover"
+                  loading="lazy"
+                />
               </div>
 
               <div>
@@ -174,11 +158,12 @@ export default function ProjectDetails() {
         </div>
 
         <div className="">
-          <div className="relative rounded-3xl bg-[#44DAFF] p-6  h-full flex justify-center items-center shadow-xl">
+          <div className="relative rounded-3xl bg-[#44DAFF] p-6  h-full flex justify-center items-center shadow-xl" data-aos-offset="100" data-aos="fade-left" data-aos-duration="700">
             <img
               src={project.testimonialImg2}
               alt={`Mobile mockup`}
               className="object-contain"
+              loading="lazy"
             />
           </div>
         </div>

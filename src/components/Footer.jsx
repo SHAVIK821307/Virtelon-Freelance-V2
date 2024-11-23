@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png"
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,12 +10,12 @@ const Footer = () => {
             <img src={logo} loading="lazy" className=" w-16" alt="Logo" />
         </div>
         <div className="flex gap-4 items-center flex-wrap justify-around mb-12">
-          <a
-            href="#"
+          <NavLink to={"/"}
+            
             className="text-gray-700 font-bold text-sm hover:text-gray-900 transition duration-300 ease-in-out"
           >
             Home
-          </a>
+          </NavLink>
           <a
             href="#whyus"
             className="text-gray-700 font-bold text-sm hover:text-gray-900 transition duration-300 ease-in-out"

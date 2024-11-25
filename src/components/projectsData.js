@@ -17,6 +17,7 @@ export const projectsData=[
         title: "Bra Factory",
         description:
           "Bra Factory, where elegance and comfort come together. We’re here to offer you the perfect blend of high-quality bras and lingerie designed to make you feel confident, beautiful, and empowered—every day.",
+        link:"https://www.brafactory.in/",
         client: {
           name: "LadyLand",
           description: "Biggest Wholesale Female Undergarment Store",
@@ -55,6 +56,7 @@ export const projectsData=[
         title: "7 Senses Integration Centre",
         description:
           "7 Senses Integration Centre is the best New Era Child Mental Health Recovery Integration organization that helps in the Mental as well as Logical growth of Children.",
+        link:"https://sevensensesintegrationcentre.com/",
         client: {
           name: "7 Senses Integration Centre",
           description: "Child Mental Health Integration Centre",

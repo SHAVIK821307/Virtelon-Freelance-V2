@@ -1,12 +1,13 @@
 import { useState } from 'react'
-
+import { useParams } from "react-router-dom";
 export default function Contact() {
+  const {title}=useParams()
   const [formData, setFormData] = useState({
     email: '',
     name: '',
     socialProfile:'',
     mobileNo:'',
-    service:'',
+    service:title,
     requirements:'',
   })
 

@@ -37,18 +37,18 @@ const Navbar = () => {
             <li className="py-1">Home</li>
             <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
           </NavLink>
-          <a href="#whyus">
+          <a href="#/whyus">
             <li className="py-1">Why Us</li>
             <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
           </a>
-          <a href="#services">
+          <NavLink to="/services">
             <li className="py-1">Services</li>
             <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
-          </a>
-          <a href="#projects">
+          </NavLink>
+          <NavLink to="/projects">
             <li className="py-1">Projects</li>
             <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
-          </a>
+          </NavLink>
           <NavLink to="/contact">
             <li className="py-1">Contact</li>
             <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
@@ -85,15 +85,15 @@ const Navbar = () => {
             <NavLink onClick={() => setShowMenu(false)} to="/">
               <p className="px-4 py-2 rounded inline-block ">Home</p>
             </NavLink>
-            <a onClick={() => setShowMenu(false)} href="#whyus">
+            <a onClick={() => setShowMenu(false)} href="#/whyus">
               <p className="px-4 py-2 rounded inline-block ">Why Us</p>
             </a>
-            <a onClick={() => setShowMenu(false)} href="#services">
+            <NavLink onClick={() => setShowMenu(false)} to="/services">
               <p className="px-4 py-2 rounded inline-block ">Services</p>
-            </a>
-            <a onClick={() => setShowMenu(false)} href="#projects">
+            </NavLink>
+            <NavLink onClick={() => setShowMenu(false)} to="/projects">
               <p className="px-4 py-2 rounded inline-block ">Projects</p>
-            </a>
+            </NavLink>
 
             <NavLink onClick={() => setShowMenu(false)} to="/contact">
               <p className="px-4 py-2 rounded inline-block ">Contact Us</p>

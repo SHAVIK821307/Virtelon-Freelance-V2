@@ -18,9 +18,9 @@ export default function ProjectDetails() {
           <div className="space-y-4">
             <h1 className="text-4xl font-bold">{project.title}</h1>
             <p className="text-lg ">{project.description}</p>
-            <button className="rounded-full bg-white px-6 py-2 text-black hover:bg-cyan-50">
+            <a href={project.link} target="_blank" className="rounded-full inline-block bg-white px-6 py-2 text-black hover:bg-cyan-50">
               Visit Site
-            </button>
+            </a>
           </div>
           <div className="relative h-[200px] md:h-[300px]">
             <img

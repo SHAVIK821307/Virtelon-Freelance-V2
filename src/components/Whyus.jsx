@@ -2,7 +2,7 @@ import React from "react";
 
 const Whyus = () => {
   return (
-    <section id="whyus" className="pb-12 md:pb-24 lg:pb-32">
+    <section id="/whyus" className="pb-12 md:pb-24 lg:pb-32">
       <div className="flex flex-col justify-center items-center">
         {/* <div>
           <div class="zigzag-2"></div>

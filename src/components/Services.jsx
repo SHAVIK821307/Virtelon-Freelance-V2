@@ -25,7 +25,7 @@ const Services = () => {
         "Innovative generative AI solutions creating unique content, designs and insights to drive creativity and efficiency",
     },
     {
-      title: "Voicebot/Chatbot",
+      title: "Voicebot-Chatbot",
       description:
         "Advanced voicebot and chatbot solution for seamless, interactive customer engagement and support.",
     },
@@ -68,10 +68,11 @@ const Services = () => {
               index != lastIndex ? (
                 <div
                   key={index}
-                  className=" bg-[#ACEBE2] border-2 border-transparent hover:border-2 hover:bg-[#a0e8db] hover:border-[#00838d] transition-colors duration-200 px-6 py-12 rounded-lg shadow-xl"
+                  className=" bg-[#ACEBE2] cursor-pointer border-2 border-transparent hover:border-2 hover:bg-[#a0e8db] hover:border-[#00838d] transition-colors duration-200 px-6 py-12 rounded-lg shadow-xl"
                   data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
                   data-aos-duration="800"
                   data-aos-offset="200"
+                  onClick={() => navigate(`/contact/${service.title}`)}
                 >
                   <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                   <p className="text-gray-700">{service.description}</p>

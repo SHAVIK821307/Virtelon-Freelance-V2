@@ -8,6 +8,7 @@ import ProjectDetails from "./pages/ProjectDetails";
 import ScrollToTop from "./components/ScrollToTop";
 import AllServices from "./pages/AllServices";
 import Contact from "./pages/Contact";
+import Projects from "./components/Projects";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -22,8 +23,10 @@ function App() {
             <Route path="/" element={<Home />} />
             
             <Route path="/projects/:id" element={<ProjectDetails />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/services" element={<AllServices />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/contact/:title" element={<Contact />} />
             {/* <Route path="/portfolio" element={<Portfolio />} /> */}
             {/* <Route path="/services" element={<Services />} /> */}
             {/* <Route path="/franchise" element={<Franchise />} /> */}

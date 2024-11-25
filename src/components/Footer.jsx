@@ -16,12 +16,12 @@ const Footer = () => {
           >
             Home
           </NavLink>
-          <a
-            href="#whyus"
+          <NavLink
+            to="/whyus"
             className="text-gray-700 font-bold text-sm hover:text-gray-900 transition duration-300 ease-in-out"
           >
             Why Us
-          </a>
+          </NavLink>
           <NavLink
             to="/services"
             className="text-gray-700 font-bold text-sm hover:text-gray-900 transition duration-300 ease-in-out"

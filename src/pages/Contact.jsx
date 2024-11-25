@@ -1,5 +1,9 @@
 import { useState } from 'react'
 import { useParams } from "react-router-dom";
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function Contact() {
   const {title}=useParams()
   const [formData, setFormData] = useState({
@@ -10,11 +14,38 @@ export default function Contact() {
     service:title,
     requirements:'',
   })
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    // Handle form submission here
+    setIsSubmitting(true);
+
+    // EmailJS integration
+    emailjs
+      .send(
+        "service_qqtzipf", // Replace with your EmailJS service ID
+        "template_r0fswua", // Replace with your EmailJS template ID
+        formData,
+        "LmQFkfoDvLaWEoBP9" // Replace with your EmailJS user ID
+      )
+      .then(
+        (response) => {
+          toast.success("Form submitted successfully!");
+          setFormData({
+            email: "",
+            name: "",
+            socialProfile: "",
+            mobileNo: "",
+            service: title,
+            requirements: "",
+          });
+        },
+        (error) => {
+          toast.error("Failed to submit form. Please try again.");
+          console.error("EmailJS Error:", error);
+        }
+      )
+      .finally(() => setIsSubmitting(false));
   }
 
   const handleChange = (e) => {
@@ -132,10 +163,12 @@ export default function Contact() {
         <button
           type="submit"
           className="w-full py-4 px-6 text-white text-lg font-medium bg-[#26B9C8] rounded-full hover:bg-[#1fa8b6] transition-colors"
+          disabled={isSubmitting}
         >
-          SUBMIT
+          {isSubmitting ? "Submitting..." : "SUBMIT"}
         </button>
       </form>
+      <ToastContainer />
     </div>
   )
 }

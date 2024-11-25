@@ -22,25 +22,25 @@ const Footer = () => {
           >
             Why Us
           </a>
-          <a
-            href="#services"
+          <NavLink
+            to="/services"
             className="text-gray-700 font-bold text-sm hover:text-gray-900 transition duration-300 ease-in-out"
           >
             Services
-          </a>
-          <a
-            href="#projects"
+          </NavLink>
+          <NavLink
+            to="/projects"
             className="text-gray-700 font-bold text-sm hover:text-gray-900 transition duration-300 ease-in-out"
           >
             Projects
-          </a>
+          </NavLink>
           
-          <a
-            href="#contact"
+          <NavLink
+            to="/contact"
             className="text-gray-700 font-bold text-sm hover:text-gray-900 transition duration-300 ease-in-out"
           >
             Contact Us
-          </a>
+          </NavLink>
         </div>
         <hr className="border-gray-900 mb-4" />
 

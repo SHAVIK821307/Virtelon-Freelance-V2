@@ -23,7 +23,7 @@ const ContactSection = () => {
           </h1>
           <div className="flex flex-wrap justify-center">
             <a
-              href="https://www.facebook.com/profile.php?id=61559666020367"
+              href="https://www.facebook.com/share/19aC2STDaH/?mibextid=LQQJ4d"
               className="mx-2"
             >
               <svg
@@ -57,7 +57,7 @@ const ContactSection = () => {
                 </g>
               </svg>{" "}
             </a> */}
-            <a href="https://www.instagram.com/flutteryourway/" className="mx-2">
+            <a href="https://www.instagram.com/virtelonpvt?igsh=d2Z5OTI4enA3enky&utm_source=qr" className="mx-2">
               <svg
                 stroke="currentColor"
                 fill="currentColor"

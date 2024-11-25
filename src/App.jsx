@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import AllServices from "./pages/AllServices";
 import Contact from "./pages/Contact";
 import Projects from "./components/Projects";
+import Whyus from "./components/Whyus";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -21,6 +22,7 @@ function App() {
             <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/whyus" element={<Whyus />} />
             
             <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/projects" element={<Projects />} />

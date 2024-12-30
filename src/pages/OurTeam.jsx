@@ -44,6 +44,7 @@ const OurTeam = () => {
                 src={shubhamImg}
                 alt="CEO"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -75,6 +76,7 @@ const OurTeam = () => {
                   src={member.img}
                   alt="Marketing Expert"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>

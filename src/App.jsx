@@ -10,6 +10,7 @@ import AllServices from "./pages/AllServices";
 import Contact from "./pages/Contact";
 import Projects from "./components/Projects";
 import Whyus from "./components/Whyus";
+import OurTeam from "./pages/OurTeam";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/services" element={<AllServices />} />
+            <Route path="/ourteam" element={<OurTeam />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/contact/:title" element={<Contact />} />
             {/* <Route path="/portfolio" element={<Portfolio />} /> */}
